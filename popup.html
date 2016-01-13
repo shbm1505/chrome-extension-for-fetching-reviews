@@ -7,6 +7,7 @@
 <html>
   <head>
     <title>Getting Started Extension's Popup</title>
+     
     <style>
       body {
         font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
@@ -29,11 +30,17 @@
       -
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
-    <script src="popup.js"></script>
+  <!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">-->
+   
   </head>
   <body>
     <div id="status"></div>
     <img id="image-result" hidden>
+
+    <script type="text/javascript">
+        alert(document.getElementById("productTitle"));
+    </script>
+    <script src="popup.js"></script>
   </body>
 </html>
 

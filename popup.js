@@ -1,4 +1,6 @@
-
+// Copyright (c) 2014 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
 
 /**
  * Get the current URL.
@@ -64,9 +66,11 @@ function getImageUrl(searchTerm, callback, errorCallback) {
   x.onload = function() {
     // Parse and process the response from Google Image Search.
     var response = x.response;
+    var imag = document.getElementById('productTitle');
+    renderStatus(imag+"ohlalala");
     if (!response || !response.responseData || !response.responseData.results ||
         response.responseData.results.length === 0) {
-      errorCallback('No response from Google Image search!');
+      //errorCallback('No response from Google Image search!');
       return;
     }
     var firstResult = response.responseData.results[0];
@@ -94,10 +98,12 @@ document.addEventListener('DOMContentLoaded', function() {
   getCurrentTabUrl(function(url) {
     // Put the image URL in Google search.
     renderStatus('Performing Google Image search for ' + url);
- renderStatus('hiiii');
-     var imageResult = document.getElementById('productTitle');
-     renderStatus('yo');
-      renderStatus(imageResult.innerHTML;
 
+  //  var window = new XMLHttpRequest();
+
+    
+      var imageResult = document.getElementById('productTitle');
+       renderStatus(imageResult+"haha")
+    
   });
 });
