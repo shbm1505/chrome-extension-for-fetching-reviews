@@ -1,16 +1,11 @@
 {
-  "manifest_version": 2,
-
-  "name": "Reviews Extractor",
-  "description": "This extension scraps the reviews of current page",
+  "name": "Get pages source",
   "version": "1.0",
-
+  "manifest_version": 2,
+  "description": "Get pages source from a popup",
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
-  "permissions": [
-    "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+  "permissions": ["tabs", "<all_urls>"]
 }
